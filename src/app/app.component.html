@@ -1,5 +1,9 @@
-
-
-  <h1>Hallo Angular world</h1>
-  <input type="text" [ngModel]">
-  <p>{{title}}</p>
+<div class="container">
+    <h1>Angular components</h1>
+    <app-post-form></app-post-form>
+    <hr />
+    <app-post
+            *ngFor = "let p of posts"
+    [post]="p"
+    ></app-post>
+</div>
